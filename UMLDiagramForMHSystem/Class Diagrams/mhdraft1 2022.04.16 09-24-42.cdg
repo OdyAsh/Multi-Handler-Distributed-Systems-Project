@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="mhdraft1">
+  <ClassDiagramComponents>
+    <Class name="mhM" package="mhdraft1" visibility="public" xPosition="146.0" yPosition="654.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="mhC" package="mhdraft1" visibility="public" xPosition="70.0" yPosition="382.0">
+      <Fields>
+        <Field name="groups" type="Map&lt;String, ArrayList&lt;subIF&gt;&gt;" visibility="package"/>
+        <Field name="g" type="mhGUI" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="mhGUI" name="g"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="subscribe" returnType="void" visibility="public">
+          <Argument type="String" name="groupName"/>
+          <Argument type="subIF" name="subscriber"/>
+        </Method>
+        <Method name="unsubscribe" returnType="void" visibility="public">
+          <Argument type="String" name="groupName"/>
+          <Argument type="subIF" name="subscriber"/>
+        </Method>
+        <Method name="updateAllChatboxes" returnType="void" visibility="public">
+          <Argument type="String" name="groupName"/>
+          <Argument type="String" name="msg"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="subC" package="mhdraft1" visibility="public" xPosition="708.0" yPosition="418.0">
+      <Fields>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="id" type="int" visibility="package"/>
+        <Field name="g" type="subGUI" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="id"/>
+          <Argument type="subGUI" name="g"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="updateChatbox" returnType="void" visibility="public">
+          <Argument type="String" name="msg"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getID" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="subGUI" package="mhdraft1" visibility="public" xPosition="1030.0" yPosition="1390.0">
+      <Fields>
+        <Field name="r" type="Registry" visibility="public"/>
+        <Field name="mhif" type="mhIF" visibility="public"/>
+        <Field name="subc" type="subC" visibility="public"/>
+        <Field name="selectedGroup" type="String" visibility="public"/>
+        <Field name="name" type="String" visibility="public"/>
+        <Field name="id" type="int" visibility="public"/>
+        <Field name="buttonGroup1" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jRadioButton1" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton2" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton3" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextArea1" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField3" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField4" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jTextField1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jRadioButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jRadioButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="dispChatBox" returnType="void" visibility="public">
+          <Argument type="String" name="msg"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="mhGUI" package="mhdraft1" visibility="public" xPosition="1619.0" yPosition="562.0">
+      <Fields>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField3" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="dispSubsOfGroup" returnType="void" visibility="public">
+          <Argument type="String" name="groupName"/>
+          <Argument type="ArrayList&lt;subIF&gt;" name="subs"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="mhIF" package="mhdraft1" visibility="public" xPosition="289.0" yPosition="821.0">
+      <Methods>
+        <Method name="subscribe" returnType="void" visibility="public">
+          <Argument type="String" name="groupName"/>
+          <Argument type="subIF" name="subscriber"/>
+        </Method>
+        <Method name="unsubscribe" returnType="void" visibility="public">
+          <Argument type="String" name="groupName"/>
+          <Argument type="subIF" name="subscriber"/>
+        </Method>
+        <Method name="updateAllChatboxes" returnType="void" visibility="public">
+          <Argument type="String" name="groupName"/>
+          <Argument type="String" name="msg"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="subIF" package="mhdraft1" visibility="public" xPosition="727.0" yPosition="675.0">
+      <Methods>
+        <Method name="updateChatbox" returnType="void" visibility="public">
+          <Argument type="String" name="msg"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getID" returnType="int" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

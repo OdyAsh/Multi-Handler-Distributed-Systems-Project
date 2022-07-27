@@ -1,0 +1,4 @@
+Assumptions:
+A subscriber can only subscribe to one group at any given time.
+In the subscriber's GUI, the user will always write their name and ID, then click on a group from the listed groups, then press on subscribe, so handling cases like the user clicking on unsubscribe first or empty name/ID forms will not be implemented.
+Also, we assume that the user will only modify the designated textfields like "name:" , "ID:", and "Message to send:" and no attempts will be made to modify "Status:" and the "Chatbox" text area.
